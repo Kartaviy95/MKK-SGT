@@ -1,0 +1,8 @@
+feature: feature/*
+bug-fix: fix/*
+enhancement: enhancement/*
+optimization: optimization/*
+cleanup: cleanup/*
+change: change/*
+setting: setting/*
+translation: translation/*

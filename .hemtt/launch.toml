@@ -1,0 +1,29 @@
+[default]
+workshop = [
+    "463939057", # ACE3
+    "450814997", # CBA_A3
+    "3499977893", # Advanced Developer Tools
+]
+mission = "test_mkk_ptg.Stratis"
+
+[rhs]
+extends = "default"
+workshop = [
+    "843425103",  # RHSAFRF
+    "843577117",  # RHSUSAF
+    "843593391",  # RHSGREF
+    "843632231",  # RHSSAF
+]
+
+[mkk]
+extends = "default"
+workshop = [
+    "583496184",  # CUP Terrains - Core
+    "843425103",  # RHSAFRF
+    "843577117",  # RHSUSAF
+    "843593391",  # RHSGREF
+    "843632231",  # RHSSAF
+]
+parameters = [
+    "-mod=F:\\SteamLibrary\\steamapps\\common\\Arma 3\\SolidGames\\@sg_core;F:\\SteamLibrary\\steamapps\\common\\Arma 3\\SolidGames\\@sg_islands;F:\\SteamLibrary\\steamapps\\common\\Arma 3\\SolidGames\\@sg_mods;F:\\SteamLibrary\\steamapps\\common\\Arma 3\\SolidGames\\@sg_server;"
+]

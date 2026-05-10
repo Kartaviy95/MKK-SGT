@@ -1,0 +1,1 @@
+call fnc_kbn_selectPlayerCursorTarget;

@@ -1,0 +1,107 @@
+﻿class CfgPatches
+{
+	class kaban_sg_ready
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 1.01;
+		requiredAddons[] = {"A3_Functions_F","A3_UIFonts_F","A3_Data_F"};
+		version = "1.0";
+	};
+};
+
+class CfgFunctions
+{
+	class kaban_sg_ready
+	{
+		class Init_functions
+		{
+			class postInit
+			{
+				file = "\a3\kaban_sg_ready\XEH_postInit.sqf";
+				postInit = 1;
+			};
+		};
+	};
+};
+
+/*
+class Extended_PostInit_EventHandlers  {
+
+	class kaban_sg_ready  {
+		clientInit = "execVM '\a3\kaban_sg_ready\XEH_postInit.sqf'";
+	};
+};
+*/
+
+class RscText;
+class RscEdit;
+class RscShortcutButton;
+class RscFrame;
+
+class Rsc_Kaban_DisplayText { 
+	access = 0; 
+	idd = 5187; 
+	movingEnable = 1; 
+  
+	class Controls {
+	
+		class Kbn_Background: RscText
+		{
+			moving = 1;
+
+			idc = 1000;
+			x = 0.05;
+			y = 0.101;
+			w = 0.9;
+			h = 0.8366;
+			colorBackground[] = {0,0,0,0.7};
+		};
+		class Kbn_EditTitle: RscText
+		{
+			idc = 102;
+			style = "0x00 + 0x200";
+
+			text = "Description";
+			x = 0.1;
+			y = 0.129;
+			w = 0.8;
+			h = 0.0289999;
+		};
+		class Kbn_Record: RscEdit
+		{
+			idc = 101;
+			style = "0x10 + 0x200";
+
+			x = 0.1;
+			y = 0.186001;
+			w = 0.8;
+			h = 0.639;
+		};
+		class Kbn_B_OK: RscShortcutButton
+		{
+			idc = 103;
+			default = 0;
+
+			text = "OK";
+			x = 0.758929;
+			y = 0.826786;
+			w = 0.145625;
+			h = 0.1;
+			
+			action = "(findDisplay 5187) closeDisplay 1;";
+		};
+		class Kbn_Frame: RscFrame
+		{
+			idc = 104;
+			x = 0.09375;
+			y = 0.175;
+			w = 0.8125;
+			h = 0.650001;
+		};
+	};
+};
+
+class RscDisplayInsertMarker {
+	onKeyUp = "_this call fnc_kbn_markers_handler";
+};

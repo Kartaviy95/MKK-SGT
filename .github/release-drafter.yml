@@ -1,0 +1,48 @@
+branches:
+  - main
+  - release-drafter  # for testing edits to this configuration
+
+name-template: 'Версия $NEXT_PATCH_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
+
+sort-by: title # sort alphabetically
+sort-direction: ascending
+
+initial-commits-since: "2026-01-01T00:00:00Z"
+
+categories:
+  - title: '**ДОБАВЛЕНО:**'
+    labels:
+      - 'feature'
+  - title: '**ИСПРАВЛЕНО:**'
+    labels:
+      - 'bug-fix'
+  - title: '**УЛУЧШЕНО:**'
+    labels:
+      - 'enhancement'
+      - 'optimization'
+  - title: '**ИЗМЕНЕНО:**'
+    labels:
+      - 'cleanup'
+      - 'change'
+  - title: '**НАСТРОЙКИ:**'
+    labels:
+      - 'setting'
+  - title: '**ПЕРЕВОД:**'
+    labels:
+      - 'translation'
+
+exclude-labels:
+  - 'ignore-changelog'
+  - 'dependencies'
+
+change-template: '- $TITLE @$AUTHOR ([#$NUMBER]($URL))'
+template: |
+  ## Список изменений
+
+  $CHANGES
+
+replacers:
+  # Category titles
+  - search: '/\#\# (\*\*(ДОБАВЛЕНО|ИСПРАВЛЕНО|УЛУЧШЕНО|ИЗМЕНЕНО|НАСТРОЙКИ|ПЕРЕВОД):\*\*)/g'
+    replace: '$1'

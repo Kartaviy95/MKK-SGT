@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="PTG">
+    <Package name="Intercept">
+        <!-- <Key ID="STR_CMC_Intercept_DisplayName">
+            <English>Missiles intercept</English>
+            <Russian>Перехват ракет</Russian>
+        </Key> -->
+    </Package>
+</Project>

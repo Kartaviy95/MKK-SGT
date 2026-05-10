@@ -1,0 +1,22 @@
+name: Release Drafter
+
+on:
+    push:
+        branches:
+            - main
+
+permissions:
+  contents: read
+
+jobs:
+    draft:
+        permissions:
+            contents: write
+            pull-requests: read
+        runs-on: ubuntu-latest
+        steps:
+            - name: Release Drafter
+              if: github.repository == 'SolidGames-MKK/sg_mods'
+              uses: release-drafter/release-drafter@v6
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

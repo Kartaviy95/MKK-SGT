@@ -1,0 +1,9 @@
+[sqf.banned_commands]
+options.ignore = ["createSoundSource", "addPublicVariableEventHandler"]
+
+[sqf]
+var_all_caps = false
+
+[config]
+external_parent_case = false
+file_type.options.allow_no_extension = true
