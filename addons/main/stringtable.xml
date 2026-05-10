@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="MKK Scenario Game Tools">
+    <Package name="Main">
+        <Key ID="STR_MKK_SGT_ACTION_SELECT_UNIT">
+            <English>Switch to unit</English>
+            <Russian>Вселиться</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_COLOR_BLACK">
+            <English>Black</English>
+            <Russian>Черный</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_COLOR_BLUE">
+            <English>Blue</English>
+            <Russian>Синий</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_COLOR_GREEN">
+            <English>Green</English>
+            <Russian>Зеленый</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_COLOR_ORANGE">
+            <English>Orange</English>
+            <Russian>Оранжевый</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_COLOR_RED">
+            <English>Red</English>
+            <Russian>Красный</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_COLOR_WHITE">
+            <English>White</English>
+            <Russian>Белый</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_COLOR_YELLOW">
+            <English>Yellow</English>
+            <Russian>Желтый</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_DESC_NO_CONVENTIONS">
+            <English>No mission conventions found.</English>
+            <Russian>Условности миссии не найдены.</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_DESC_NO_PRIMARY">
+            <English>No primary weapon</English>
+            <Russian>Без основного оружия</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_DESC_UNITS">
+            <English>units</English>
+            <Russian>бойцов</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_DIARY_ACTIONS">
+            <English>Actions</English>
+            <Russian>Действия</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_DIARY_DESCRIPTIONS">
+            <English>Descriptions</English>
+            <Russian>Описания</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_DIARY_ENEMY_GROUP">
+            <English>Other group</English>
+            <Russian>Другой отряд</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_DIARY_KEYS">
+            <English>Hotkeys</English>
+            <Russian>Горячие клавиши</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_DIARY_MARKERS">
+            <English>Markers</English>
+            <Russian>Маркеры</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_DIARY_OWN_GROUP">
+            <English>Our group</English>
+            <Russian>Наш отряд</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_DIARY_TIMING">
+            <English>Timing</English>
+            <Russian>Тайминг</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_DIARY_UNITS">
+            <English>Groups</English>
+            <Russian>Отряды</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_HINT_COPIED">
+            <English>Copied to clipboard.</English>
+            <Russian>Скопировано в буфер обмена.</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MARKER_AMMO">
+            <English>Crate #%1</English>
+            <Russian>Ящик №%1</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MARKER_BOT">
+            <English>Bot</English>
+            <Russian>Бот</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MARKER_GROUP_AMMO">
+            <English>Crates</English>
+            <Russian>Ящики</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MARKER_GROUP_BOT">
+            <English>Bots</English>
+            <Russian>Боты</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MARKER_GROUP_BUILD">
+            <English>Buildings</English>
+            <Russian>Строения</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MARKER_GROUP_RESPAWN">
+            <English>Respawn</English>
+            <Russian>Спаун</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MARKER_GROUP_VEHICLE">
+            <English>Vehicles</English>
+            <Russian>Техника</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_ALL_MARKERS">
+            <English>All markers:</English>
+            <Russian>Все маркеры:</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_BRIEFING">
+            <English>Briefing:</English>
+            <Russian>Брифинг:</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_CLEAR_MARKERS">
+            <English>Clear markers</English>
+            <Russian>Очистить маркеры</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_CONVENTIONS">
+            <English>Conventions:</English>
+            <Russian>Условности:</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_DELETE">
+            <English>Delete</English>
+            <Russian>Удалить</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_HIDE">
+            <English>Hide</English>
+            <Russian>Скрыть</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_INFANTRY">
+            <English>Infantry and weapons:</English>
+            <Russian>Пехота и вооружение:</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_KEYS_TEXT">
+            <English>[Delete] block marker deletion on map. [Shift+H] hide marker under cursor. [Ctrl+H] show marker under cursor. [T] create elevation marker. [Alt] highlight cursor position.</English>
+            <Russian>[Delete] блокирует удаление маркера на карте. [Shift+H] скрывает маркер под курсором. [Ctrl+H] показывает маркер под курсором. [T] ставит отметку высоты. [Alt] подсвечивает позицию курсора.</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_LOAD_MARKERS">
+            <English>Load markers:</English>
+            <Russian>Загрузить маркеры:</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_RECREATE">
+            <English>Recreate</English>
+            <Russian>Пересоздать</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_SAVE_MARKERS">
+            <English>Save markers:</English>
+            <Russian>Сохранить маркеры:</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_SHOW">
+            <English>Show</English>
+            <Russian>Показать</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_TIMING_START">
+            <English>Start timing:</English>
+            <Russian>Начать замер:</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_TIMING_STOP">
+            <English>Stop timing</English>
+            <Russian>Остановить замер</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_TOGGLE">
+            <English>Toggle:</English>
+            <Russian>Показать/скрыть:</Russian>
+        </Key>
+        <Key ID="STR_MKK_SGT_MENU_VEHICLES">
+            <English>Vehicles and crates:</English>
+            <Russian>Техника и ящики:</Russian>
+        </Key>
+    </Package>
+</Project>
