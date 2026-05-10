@@ -14,9 +14,9 @@
 ## Текущее состояние проекта
 
 - HEMTT: `name = "MKK Scenario Game Tools"`, `prefix = "sgt"`.
-- Реализован addon `sgt_main` в `addons/main`.
-- `sgt_main` создан на базе `extra/base`.
-## Реализовано в `sgt_main`
+- Реализованы модульные addons: `sgt_core`, `sgt_markers`, `sgt_diary`, `sgt_map_tools`, `sgt_admin_tools`.
+- Модули SGT созданы на базе CBA/XEH-шаблона `extra/base`.
+## Реализовано в модулях SGT
 
 - Дневниковое меню действий.
 - Дневниковый список групп и юнитов.
@@ -39,15 +39,19 @@
 
 ## Карта модулей
 
-- `sgt_main`: текущий основной addon. Содержит CBA/XEH-каркас, состояние, дневниковое меню, marker helpers, отчеты, hotkey/display handlers и action вселения.
+- `sgt_core`: общий CBA/XEH-каркас, версия, состояние, общие helper-функции.
+- `sgt_markers`: служебные маркеры групп, техники, ящиков, строений и ботов.
+- `sgt_diary`: дневниковое меню, список групп и clipboard-отчеты.
+- `sgt_map_tools`: сохранение/загрузка пользовательских маркеров, отметки высоты, подсветка позиции и тайминг.
+- `sgt_admin_tools`: вселение в юнита под курсором и player actions.
 
 ## Шаблоны кодирования
 
 - SQF-функции добавлять как `addons/<module>/functions/fnc_name.sqf` и регистрировать в `XEH_PREP.hpp` соответствующего модуля.
-- Для текущего модуля использовать `addons/main/functions/fnc_name.sqf` и `addons/main/XEH_PREP.hpp`.
+- Для текущего модуля использовать `addons/<module>/functions/fnc_name.sqf` и `addons/<module>/XEH_PREP.hpp`.
 - Сохранять CBA-структуру addon: `script_component.hpp`, `XEH_PREP.hpp`, XEH init-файлы, `CfgEventHandlers.hpp`, `config.cpp`.
 - Использовать macros `FUNC`, `EFUNC`, `QFUNC`, `GVAR`, `QGVAR` вместо ручной сборки имен функций или переменных.
-- Новые видимые строки помещать в `addons/main/stringtable.xml` с English и Russian.
+- Новые видимые строки помещать в `addons/core/stringtable.xml` с English и Russian.
 - Новые localization keys называть `STR_MKK_SGT_*`.
 - Не использовать новые `ptg_*`, `mkk_ptg_*`, `fnc_kbn_*`, `kbn_*`, `kaban_*` имена.
 - Remote-callable функции добавлять только при необходимости; не открывать широкий remote execution без причины.

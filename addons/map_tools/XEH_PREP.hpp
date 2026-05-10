@@ -1,0 +1,13 @@
+PREP(addTitleToHistory);
+PREP(clearSavedMarkers);
+PREP(createHeightMarker);
+PREP(createHighlightMarker);
+PREP(createTimingMarker);
+PREP(findMarkerUnderCursor);
+PREP(loadSavedMarkers);
+PREP(mapKeyDown);
+PREP(markerDialogKeyUp);
+PREP(saveMarkers);
+PREP(setupDisplayHandlers);
+PREP(startTiming);
+PREP(stopTiming);
